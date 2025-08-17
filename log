@@ -25,3 +25,20 @@ Sun, Aug 17, 2025  7:31:31 PM:
  tests:  2|3
 total_score: 20/70
 60a14e2
+Sun, Aug 17, 2025  7:57:38 PM: 
+ exercises.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'copia_pila':
+exercises.c:107:30: error: 'axu' undeclared (first use in this function)
+    while((numero = (int*)pop(axu)) != NULL{
+                              ^~~
+exercises.c:107:30: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:107:43: error: expected ')' before '{' token
+    while((numero = (int*)pop(axu)) != NULL{
+                                           ^
+exercises.c:110:1: error: expected expression before '}' token
+ }
+ ^
+Compilation failed
+83f76af
