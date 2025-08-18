@@ -85,6 +85,9 @@ void eliminaElementos(List*L, int elem){
          popCurrent(L);
          numero = (int*)next(L);
       }
+      else{
+         numero = (int*)next(L);
+      }
    }
 }
 
@@ -97,6 +100,7 @@ Puedes usar una pila auxiliar.
 
 void copia_pila(Stack* P1, Stack* P2) {
    Stack* aux = create_stack();
+
    int *numero;
 
    while((numero = (int*)pop(P1)) != NULL){
@@ -123,14 +127,33 @@ int parentesisBalanceados(char *cadena) {
 
    while(cadena[i] != '\0'){
       char c = cadena[i];
-
-      if(c == '(' || c == '[' || '{'){
-         printf("prueba1");
+      if(c == '(' || c == '[' || c == '{'){
+         char *abierto = (char*)malloc(sizeof(char));
+         *abierto = c;
+         push(pila, abierto);
       }
+      //tenia errores de parentesis y me comi la c con el '}' xdd
+      if(c == ')' || c == ']' || c == '}'){
+         char*cerrado = (char*)pop(pila);
+         if(cerrado == NULL){
+            return 0;
+         }
+         if(c == ')' && *cerrado != '('){
+            return 0;
+         }
+         if(c == ']' && *cerrado != '['){
+            return 0;
+         }
+         if(c == '}' && *cerrado != '{'){
+            return 0;
+         }
+         free(cerrado);
+      }
+      i++;
    }
-   
-
-
+   if(pop(pila) == NULL){
+      return 1;
+   }
    return 0;
 }
 

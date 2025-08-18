@@ -139,3 +139,9 @@ exercises.c:121:11: error: unused variable 'pila' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 c1c6460
+Sun, Aug 17, 2025  9:47:38 PM: 
+ exercises.c | 34 ++++++++++++++++++++++++++++------
+ 1 file changed, 28 insertions(+), 6 deletions(-)
+ tests:  9|0
+total_score: 70/70
+5f4c2c0
