@@ -132,7 +132,6 @@ int parentesisBalanceados(char *cadena) {
          *abierto = c;
          push(pila, abierto);
       }
-      //tenia errores de parentesis y me comi la c con el '}' xdd
       if(c == ')' || c == ']' || c == '}'){
          char*cerrado = (char*)pop(pila);
          if(cerrado == NULL){
