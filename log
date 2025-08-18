@@ -59,3 +59,11 @@ test.c:175:5: error: implicit declaration of function 'copia_pila' [-Werror=impl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ba026b7
+Sun, Aug 17, 2025  8:22:18 PM: 
+test.c: In function 'test_copia_pila':
+test.c:175:5: error: implicit declaration of function 'copia_pila' [-Werror=implicit-function-declaration]
+     copia_pila(P1, P2);
+     ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e3d24ee
