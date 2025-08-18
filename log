@@ -49,3 +49,13 @@ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot ope
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 947e1c5
+Sun, Aug 17, 2025  8:21:45 PM: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+test.c: In function 'test_copia_pila':
+test.c:175:5: error: implicit declaration of function 'copia_pila' [-Werror=implicit-function-declaration]
+     copia_pila(P1, P2);
+     ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ba026b7

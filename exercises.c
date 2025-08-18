@@ -95,6 +95,7 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
+/*im gonna use another code plataform bc this shit got stucked so im gonna do copy & paste 
 void copia_pila(Stack* P1, Stack* P2) {
    Stack* aux = create_stack();
    int *numero;
@@ -108,6 +109,7 @@ void copia_pila(Stack* P1, Stack* P2) {
       push(P1, numero);
    }
 }
+*/
 
 /*
 Ejercicio 5.
