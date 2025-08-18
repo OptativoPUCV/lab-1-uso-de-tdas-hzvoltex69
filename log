@@ -42,3 +42,10 @@ exercises.c:110:1: error: expected expression before '}' token
  ^
 Compilation failed
 83f76af
+Sun, Aug 17, 2025  8:10:08 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.out: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+947e1c5
