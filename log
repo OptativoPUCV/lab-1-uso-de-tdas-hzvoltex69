@@ -67,3 +67,14 @@ test.c:175:5: error: implicit declaration of function 'copia_pila' [-Werror=impl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e3d24ee
+Sun, Aug 17, 2025  8:30:41 PM: 
+ exercises.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:121:11: error: unused variable 'pila' [-Werror=unused-variable]
+    Stack *pila = create_stack();
+           ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6ac5166
